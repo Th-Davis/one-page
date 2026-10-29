@@ -1,0 +1,470 @@
+try this HTML:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowFix | Plumbing Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">FLOWFIX<span>.</span></a>
+        <a href="#contact" class="nav-button">Get a Free Quote ↗</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR LOCAL PLUMBING EXPERTS</p>
+                <h1>Reliable plumbing.<br>Done <span>right.</span></h1>
+                <p class="hero-description">
+                    Fast, professional plumbing services you can count on.
+                    From small leaks to major repairs, we've got you covered.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="button primary">Get a Free Quote ↗</a>
+                    <a href="#services" class="button secondary">Our Services</a>
+                </div>
+                <p class="trust-note">✓ Honest pricing &nbsp; ✓ Quality workmanship</p>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1000&q=85"
+                    alt="Professional working on a home repair"
+                >
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <p class="eyebrow">WHAT WE DO</p>
+            <h2>Services built around you.</h2>
+            <p class="section-description">
+                Practical solutions, dependable service, and quality work.
+            </p>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <span class="service-icon">01</span>
+                    <h3>Leak Repairs</h3>
+                    <p>Quick solutions for leaking pipes, taps, and fixtures.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-icon">02</span>
+                    <h3>Bathroom Plumbing</h3>
+                    <p>Professional installation of showers, sinks, and toilets.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-icon">03</span>
+                    <h3>Water Heaters</h3>
+                    <p>Maintenance, troubleshooting, and replacements.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-icon">04</span>
+                    <h3>Pipe Installation</h3>
+                    <p>Dependable pipework for renovations and new projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div>
+                <p class="eyebrow">WHY CHOOSE US</p>
+                <h2>Good service.<br>No headaches.</h2>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    We believe great service starts with listening.
+                    We show up ready to help, explain your options clearly,
+                    and treat your home with care.
+                </p>
+                <ul>
+                    <li>✓ Friendly, professional service</li>
+                    <li>✓ Clear, upfront estimates</li>
+                    <li>✓ Attention to every detail</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <p class="eyebrow">LET'S FIX IT</p>
+            <h2>Need a hand?</h2>
+            <p>Get in touch today and tell us what you need.</p>
+
+            <div class="contact-links">
+                <a href="tel:+96100000000" class="button primary">
+                    Call Us Now ↗
+                </a>
+                <a href="mailto:hello@yourbusiness.com" class="button secondary">
+                    Send an Email
+                </a>
+            </div>
+
+            <p class="contact-detail">+961 XX XXX XXX</p>
+            <p class="contact-detail">hello@yourbusiness.com</p>
+            <p class="contact-detail">Serving Your City & Nearby Areas</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">FLOWFIX<span>.</span></a>
+        <p>© 2026 FlowFix. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+and this CSS:
+
+
+/* ===== YOUR BRAND COLORS ===== */
+:root {
+    --dark: #102C25;
+    --green: #426B51;
+    --lime: #D9F27C;
+    --cream: #F5F5EF;
+    --white: #FFFFFF;
+    --text: #19372C;
+    --muted: #657168;
+}
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 8%;
+    background: var(--dark);
+    color: var(--white);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--lime);
+}
+
+.nav-button {
+    color: var(--lime);
+    font-weight: bold;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+    padding: 80px 8%;
+    background: var(--dark);
+    color: var(--white);
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.hero .eyebrow {
+    color: var(--lime);
+}
+
+h1 {
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+h1 span {
+    color: var(--lime);
+}
+
+.hero-description {
+    color: #D1DDD6;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons,
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.primary {
+    background: var(--lime);
+    color: var(--dark);
+}
+
+.secondary {
+    border: 1px solid #668076;
+    color: var(--white);
+}
+
+.trust-note {
+    margin-top: 25px;
+    color: #D1DDD6;
+    font-size: 0.85rem;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ===== SERVICES ===== */
+.section {
+    padding: 85px 8%;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-description {
+    color: var(--muted);
+    margin-top: 12px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.service-card {
+    background: var(--white);
+    border: 1px solid #E3E5DC;
+    padding: 26px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #102C2510;
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: var(--lime);
+    color: var(--dark);
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: #E8EDE3;
+}
+
+.about-text p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+}
+
+.about-text li {
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    background: var(--lime);
+    text-align: center;
+}
+
+.contact .eyebrow {
+    color: var(--green);
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact > p:not(.eyebrow) {
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.contact .primary {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.contact .secondary {
+    border-color: var(--dark);
+    color: var(--dark);
+}
+
+.contact-detail {
+    font-size: 0.95rem;
+    margin: 5px 0 !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px 8%;
+    background: var(--dark);
+    color: var(--white);
+}
+
+footer p {
+    color: #D1DDD6;
+    font-size: 0.85rem;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 55px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-button {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 55px 5%;
+        gap: 30px;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-image img {
+        height: 270px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

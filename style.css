@@ -238,12 +238,38 @@ h2 {
     text-align: center;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 90%;
+}
+
+
+
 .contact .eyebrow {
     color: var(--green);
 }
 
 .contact h2 {
     margin-bottom: 15px;
+}
+
+#contactBtn {
+    border-radius: 20px;
+    padding: 12px 24px;
+    background-color: lightblue !important;
 }
 
 .contact > p:not(.eyebrow) {
@@ -263,6 +289,11 @@ h2 {
 .contact .secondary {
     border-color: var(--dark);
     color: var(--dark);
+    background: transparent;
+    padding: 12px 24px;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 20px;
 }
 
 .contact-detail {

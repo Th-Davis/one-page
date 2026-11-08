@@ -102,7 +102,7 @@ h1 span {
 }
 
 .hero-description {
-    color: #D1DDD6;
+    color: #b9d6c5;
     max-width: 480px;
     margin-bottom: 30px;
 }
@@ -117,7 +117,8 @@ h1 span {
 .button {
     display: inline-block;
     padding: 14px 22px;
-    border-radius: 7px;
+    background-color: lightblue !important;
+    border-radius: 17px;
     font-weight: bold;
     transition: transform 0.2s, opacity 0.2s;
 }
@@ -139,7 +140,7 @@ h1 span {
 
 .trust-note {
     margin-top: 25px;
-    color: #D1DDD6;
+    color: #b9d6c5;
     font-size: 0.85rem;
 }
 
@@ -163,7 +164,7 @@ h2 {
 }
 
 .section-description {
-    color: var(--muted);
+    color: #b9d6c5;
     margin-top: 12px;
 }
 
@@ -270,6 +271,12 @@ h2 {
     border-radius: 20px;
     padding: 12px 24px;
     background-color: lightblue !important;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+#contactBtn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 .contact > p:not(.eyebrow) {
@@ -313,8 +320,8 @@ footer {
 }
 
 footer p {
-    color: #D1DDD6;
-    font-size: 0.85rem;
+    color: #b9d6c5;
+    font-size: 0.75rem;
 }
 
 /* ===== MOBILE RESPONSIVENESS ===== */

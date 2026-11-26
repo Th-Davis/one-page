@@ -102,7 +102,7 @@ h1 span {
 }
 
 .hero-description {
-    color: #b9d6c5;
+    color: #8dd5ab;
     max-width: 480px;
     margin-bottom: 30px;
 }
@@ -140,7 +140,7 @@ h1 span {
 
 .trust-note {
     margin-top: 25px;
-    color: #b9d6c5;
+    color: #8dd5ab;
     font-size: 0.85rem;
 }
 
@@ -164,7 +164,7 @@ h2 {
 }
 
 .section-description {
-    color: #b9d6c5;
+    color: #8dd5ab;
     margin-top: 12px;
 }
 
@@ -357,7 +357,7 @@ footer {
 }
 
 footer p {
-    color: #b9d6c5;
+    color: #8dd5ab;
     font-size: 0.75rem;
 }
 

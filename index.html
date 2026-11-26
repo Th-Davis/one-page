@@ -176,13 +176,23 @@
                 <form id="contactForm">
                  <input type="text" name="name" placeholder="Your Name" required>
 
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="email" name="email" placeholder="You@Email" required>
 
                 <textarea name="message" placeholder="Your Message" required></textarea>
 
                 <button type="submit">Send Message</button>
                 </form>
-            </div>
+            </div>    
+    <script type="text/javascript" 
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "KENLJjs3b6IltJjvh",
+            });
+        })();
+    </script>
         </div> 
              
         </div>

@@ -250,10 +250,11 @@ h2 {
 }
 
 .modal-content {
+    position: relative;
     background: white;
     padding: 30px;
     border-radius: 10px;
-    max-width: 450px;
+    max-width: 500px;
     width: 90%;
 }
 
@@ -265,20 +266,32 @@ h2 {
 
 #contactForm input,
 #contactForm textarea {
-    padding: 15px;
-    border: 1px solid #0cad78;
+    padding: 18px;
+    border: 2px solid #0cad78;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 12rem;
 }
 
-#contactForm button,
 #closeModal {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#contactForm button{
     border: none;
-    background: var(--green);
+    background: red;
     color: var(--white);
-    padding: 10px 20px;
+    padding: 20px 10px;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 
@@ -304,7 +317,7 @@ h2 {
 }
 
 .contact > p:not(.eyebrow) {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .contact-links {
